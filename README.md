@@ -1,6 +1,18 @@
 ## Hi there 👋
 
+## Passion projects
+- [collab harness](https://github.com/Mahoshojo-330/collab_harness) customed harness that allow collaboration between claude code and codex 
+- [psp_engine](https://github.com/Mahoshojo-330/psp_engine) game engine for PSP with web editor
+- [reminder](https://github.com/Mahoshojo-330/reminder) ascii desktop reminder companion using local model and customed agent loop
+
+
+## skills
+
+
 <!--
+## coming soon
+- unofficial house finding software using customed mcp
+- travel planning app
 **Mahoshojo-330/Mahoshojo-330** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
