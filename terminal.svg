@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="svgTitle svgDescription">
+  <title id="svgTitle">&gt; Hello!</title>
+  <desc id="svgDescription">I&apos;m a 2nd year student in UTwente You can always find me in the library .</desc>
+  <defs>
+    <style>
+      @keyframes terminalTyping {
+        from { clip-path: inset(0 100% 0 0); }
+        to { clip-path: inset(0 0 0 0); }
+      }
+      @keyframes terminalCursorBlink {
+        0%, 45% { opacity: 1; }
+        46%, 100% { opacity: 0; }
+      }
+      .typing-layer {
+        animation-name: terminalTyping;
+        animation-fill-mode: both;
+      }
+      .terminal-cursor.cursor-blink {
+        animation: terminalCursorBlink 0.85s steps(2, end) infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .typing-layer {
+          animation: none;
+        }
+      }
+    </style>
+    <pattern id="screenDoor" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#000" opacity="0.2" />
+      <rect x="2" y="2" width="2" height="2" fill="#000" opacity="0.2" />
+    </pattern>
+    <radialGradient id="warmHaze">
+      <stop offset="0.34" stop-color="#000" stop-opacity="0" />
+      <stop offset="0.66" stop-color="#ff005a" stop-opacity="0.08" />
+      <stop offset="1" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="coolHaze">
+      <stop offset="0.36" stop-color="#000" stop-opacity="0" />
+      <stop offset="0.68" stop-color="#00beff" stop-opacity="0.08" />
+      <stop offset="1" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="vignette">
+      <stop offset="0.5" stop-color="#000" stop-opacity="0" />
+      <stop offset="1" stop-color="#000" stop-opacity="0.58" />
+    </radialGradient>
+    <filter id="greenGlow" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="buttonGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="nearGhost" x="-25%" y="-35%" width="150%" height="170%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018 0.045" numOctaves="2" seed="23" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G" result="warped" />
+      <feColorMatrix in="warped" type="hueRotate" values="160" result="colored" />
+      <feGaussianBlur in="colored" stdDeviation="2.5" />
+    </filter>
+    <filter id="farGhost" x="-40%" y="-45%" width="180%" height="190%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.009 0.028" numOctaves="3" seed="47" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="32" xChannelSelector="G" yChannelSelector="R" result="warped" />
+      <feColorMatrix in="warped" type="hueRotate" values="100" result="colored" />
+      <feGaussianBlur in="colored" stdDeviation="5" />
+    </filter>
+    <g id="sceneContent" font-family="&quot;Iosevka Etoile&quot;, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">
+      
+      <text x="80" y="154" fill="#ff003c" opacity="0.54" font-size="68" font-weight="700" letter-spacing="4"><tspan x="80" dy="0">&gt; Hello!</tspan></text>
+      <text x="96" y="154" fill="#0000ff" opacity="0.72" font-size="68" font-weight="700" letter-spacing="4"><tspan x="96" dy="0">&gt; Hello!</tspan></text>
+      <text x="88" y="154" fill="#1a7c32" filter="url(#greenGlow)" font-size="68" font-weight="700" letter-spacing="4"><tspan x="88" dy="0">&gt; Hello!</tspan></text>
+      <text x="88" y="225" fill="#e0e0e0" fill-opacity="0.58" font-size="26" letter-spacing="0.9" class="typing-layer" style="animation-duration:2.81s;animation-timing-function:steps(73,end)"><tspan x="88" dy="0">I&apos;m a 2nd year student in UTwente</tspan><tspan x="88" dy="38">You can always find me in the library</tspan><tspan x="88" dy="38">.</tspan></text>
+      <rect class="terminal-cursor cursor-blink" style="animation-duration:0.85s" x="106.3" y="279" width="3.5" height="28" rx="1" />
+      
+    </g>
+  </defs>
+  <rect width="1200" height="500" fill="#000" />
+  <ellipse cx="530" cy="205" rx="500" ry="270" fill="url(#warmHaze)" opacity="0.6" style="mix-blend-mode:screen" />
+  <ellipse cx="680" cy="300" rx="470" ry="260" fill="url(#coolHaze)" opacity="0.6" style="mix-blend-mode:screen" />
+  <g opacity="0.36" filter="url(#farGhost)" transform="translate(-330 -270) rotate(6 88 220) scale(2)">
+    <g transform="translate(860 0) scale(-1 1)"><use href="#sceneContent" xlink:href="#sceneContent" /></g>
+  </g>
+  <g opacity="0.34" filter="url(#nearGhost)" transform="translate(190 78) rotate(-1 88 220) scale(0.82)"><use href="#sceneContent" xlink:href="#sceneContent" /></g>
+  <use href="#sceneContent" xlink:href="#sceneContent" />
+  <rect width="1200" height="500" fill="url(#screenDoor)" opacity="0.72" />
+  <rect width="1200" height="500" fill="url(#vignette)" />
+</svg>
