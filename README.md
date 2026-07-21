@@ -6,8 +6,12 @@
 - [reminder](https://github.com/Mahoshojo-330/reminder) ascii desktop reminder companion using local model and customed agent loop
 
 
-## skills
-
+## Skills
+### Languages
+- Java
+- Python
+- C
+- JS
 
 <!--
 ## coming soon
