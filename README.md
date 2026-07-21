@@ -1,6 +1,7 @@
 ## Hi there 👋
+2nd year student @UTwente, You can find me in the library.
 
-## Passion projects
+## Projects
 - [collab harness](https://github.com/Mahoshojo-330/collab_harness) customed harness that allow collaboration between claude code and codex 
 - [psp_engine](https://github.com/Mahoshojo-330/psp_engine) game engine for PSP with web editor
 - [reminder](https://github.com/Mahoshojo-330/reminder) ascii desktop reminder companion using local model and customed agent loop
