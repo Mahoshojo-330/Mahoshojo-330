@@ -1,5 +1,4 @@
 ## Hi there 👋
-2nd year student @UTwente, You can find me in the library.
 
 ## Projects
 - [collab harness](https://github.com/Mahoshojo-330/collab_harness) customed harness that allow collaboration between claude code and codex in python
