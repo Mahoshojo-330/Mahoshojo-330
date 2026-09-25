@@ -1,17 +1,7 @@
 ## Hi there 👋
-
 ## Projects
-- [collab harness](https://github.com/Mahoshojo-330/collab_harness) customed harness that allow collaboration between claude code and codex in python
 - [psp_engine](https://github.com/Mahoshojo-330/psp_engine) game engine for PSP implementing custom memory allocation with web editor.
 - [reminder](https://github.com/Mahoshojo-330/reminder) ascii desktop reminder companion using local model and customed agent loop.
-
-
-## Skills
-### Languages
-- Java
-- Python
-- C
-- JS
 
 <!--
 ## coming soon
